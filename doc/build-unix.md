@@ -59,6 +59,10 @@ Build requirements:
 
 	sudo apt-get install build-essential libtool autotools-dev autoconf pkg-config libssl-dev
 
+For libgmp:
+
+	sudo apt-get install libgmp-dev
+
 For Ubuntu 12.04 and later or Debian 7 and later libboost-all-dev has to be installed:
 
 	sudo apt-get install libboost-all-dev
