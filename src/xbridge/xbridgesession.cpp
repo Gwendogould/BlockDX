@@ -807,6 +807,16 @@ bool Session::Impl::processPendingTransaction(XBridgePacketPtr packet) const
 
     if (ptr)
     {
+
+        if (ptr->state == TransactionDescr::trCancelled)
+        {
+            LOG() << "already received order and was cancelled " << ptr->id.ToString() << " " << __FUNCTION__;
+
+            LOG() << __FUNCTION__ << ptr;
+
+            return true;
+        }
+
         if (ptr->state > TransactionDescr::trPending)
         {
             LOG() << "already received order " << ptr->id.ToString() << " " << __FUNCTION__;
