@@ -1,4 +1,5 @@
 // Copyright (c) 2012-2014 The Bitcoin developers
+
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -39,7 +40,7 @@ const std::string CLIENT_NAME("BlocknetDX Core");
 
 //! First, include build.h if requested
 #ifdef HAVE_BUILD_INFO
-#include "build.h"
+#include "obj/build.h"
 #endif
 
 //! git will put "#define GIT_ARCHIVE 1" on the next line inside archives.
