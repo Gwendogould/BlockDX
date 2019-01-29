@@ -27,9 +27,6 @@ BITCOIN_TEST_SUITE = \
   test/test_blocknetdx.cpp
 # test_blocknetdx binary #
 BITCOIN_TESTS =\
-  test/benchmark_zerocoin.cpp \
-  test/tutorial_zerocoin.cpp \
-  test/libzerocoin_tests.cpp \
   test/allocator_tests.cpp \
   test/base32_tests.cpp \
   test/base58_tests.cpp \
