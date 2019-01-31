@@ -76,7 +76,7 @@ isminetype IsMine(const CKeyStore& keystore, const CScript& scriptPubKey)
         // in shared-wallet situations.
         unsigned int countOfKeysNeeded = CScriptNum(vSolutions.front(), true).getint();
         vector<valtype> keys(vSolutions.begin() + 1, vSolutions.begin() + vSolutions.size() - 1);
-        if (HaveKeys(keys, keystore) >= countOfKeysNeeded)
+        if (HaveKeys(keys, keystore) >= countOfKeysNeeded && countOfKeysNeeded > 0)
         {
             return ISMINE_SPENDABLE;
         }
